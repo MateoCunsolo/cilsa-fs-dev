@@ -1,0 +1,74 @@
+body
+{
+    
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid black 1px;
+}
+
+.bt{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid black 1px;
+    background-color: rgb(179, 171, 232);
+    cursor: pointer;
+}
+
+button
+{
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-rotada{
+    transform: rotate(180deg);
+}
+
+.form-contraste
+{
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.body-oscuro
+{
+    background-color: black;
+    color: white;
+}
+
+img{
+    border: solid white 1px;
+    border-radius: 50%;
+}
