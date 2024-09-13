@@ -1,45 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Formulario</title>
 </head>
+
 <body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Registration Form</h1>
+        <button class="contrast mb-4">Change Contrast</button>
+        <form id="registrationForm" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="error" id="nameError"></div>
+            </div>
 
-    <header>
-        <h2>Formulario de Inscripción</h2>
-    </header>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
 
-        <form action="">
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+                <div class="error" id="dobError"></div>
+            </div>
 
-            <label for="">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="error" id="passwordError"></div>
+            </div>
 
-            <label for="">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
 
-            <label for="">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-
-            <label for="">Fecha de Nacimiento</label>
-            <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required>
-
-            <label for="">Pais de residencia</label>
-            <input type="text" name="pais_residencia" id="pais_residencia" placeholder="Pais de residencia" required>
-
-            <input class="bt" type="submit">
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-        <section class="change-colours">
-            <button title="Cambiar el contraste del formulario" id="change-btn"> <img src="./icons8-contrast-30.png" alt=""> </button>
-        </section>
-
-    <footer>
-        <p>® Derechos Reservados ®</p>
-    </footer>
+    </div>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
